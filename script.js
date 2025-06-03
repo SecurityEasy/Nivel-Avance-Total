@@ -91,11 +91,6 @@ window.addEventListener("resize", () => {
 
 let angle = 0;
 let isSpinning = false;
-const fixedPremio = "2 Renovaciones \nde 10 años \n+ 1 ET200N \n+ 10 SIM Telcel";
-
-const fixedIndex = premios.findIndex(p =>
-  p.replace(/\n/g, " ").trim() === fixedPremio.replace(/\n/g, " ").trim()
-);
 
 function findAngle() {
   if (fixedIndex === -1) {
