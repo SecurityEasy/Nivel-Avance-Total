@@ -4,7 +4,13 @@ let premios = [
   "2 Renovaciones \nde 10 años \n+ 1 ET200N \n+ 10 SIM Telcel" // 🧲 Premio truqueado
 ];
 
-premios = shuffleArray(premios);
+premios = shuffleArray(premios); // ✅ primero baraja
+
+const fixedPremio = "2 Renovaciones \nde 10 años \n+ 1 ET200N \n+ 10 SIM Telcel";
+
+const fixedIndex = premios.findIndex(p =>
+  p.replace(/\n/g, " ").trim() === fixedPremio.replace(/\n/g, " ").trim()
+);
 
 const colors = ["#A3B18A", "#FFEEDB", "#344E41"];
 const canvas = document.getElementById("wheel");
