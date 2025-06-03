@@ -6,7 +6,7 @@ let premios = [
 
 premios = shuffleArray(premios);
 
-const colors = ["#c62828", "#f78f1e", "#fce8d5"];
+const colors = ["#A3B18A", "#FFEEDB", "#344E41"];
 const canvas = document.getElementById("wheel");
 const ctx = canvas.getContext("2d");
 const spinButton = document.getElementById("spin");
