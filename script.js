@@ -1,13 +1,12 @@
 let premios = [
-  "1 GT06N\n+1 VL103M\n+ 10 SIM Telcel",
-  "1 GT06N\n+ 1 ET200N\n2 renovaciones\nanuales\n+ 5 SIM Telcel",
-  "Envío Gratis\nó 2 renovaciones\nde 10 años\n+ 5 SIM Telcel",
-  "1 VL103M\n+ 10 SIM Telcel", // 🎯 Premio truqueado
+  "2 VL103M \n+ 1 R83 \n+ 5 SIM Telcel",
+  "1 LG300 \n+ 2 GT06E \n+ 10 SIM Telcel",
+  "2 Renovaciones \nde 10 años \n+ 1 ET200N \n+ 10 SIM Telcel" // 🧲 Premio truqueado
 ];
 
 premios = shuffleArray(premios);
 
-const colors = ["#c62828", "#f78f1e", "#fce8d5", "#f78f1e"];
+const colors = ["#c62828", "#f78f1e", "#fce8d5"];
 const canvas = document.getElementById("wheel");
 const ctx = canvas.getContext("2d");
 const spinButton = document.getElementById("spin");
@@ -86,7 +85,7 @@ window.addEventListener("resize", () => {
 
 let angle = 0;
 let isSpinning = false;
-const fixedPremio = "1 VL103M\n+ 10 SIM Telcel";
+const fixedPremio = "2 Renovaciones \nde 10 años \n+ 1 ET200N \n+ 10 SIM Telcel";
 
 const fixedIndex = premios.findIndex(p =>
   p.replace(/\n/g, " ").trim() === fixedPremio.replace(/\n/g, " ").trim()
